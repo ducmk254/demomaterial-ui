@@ -5,7 +5,8 @@ import {alpha,makeStyles} from "@material-ui/core/styles"
 const useStyle = makeStyles((theme)=>({
     toolbar:{
         display:"flex",
-        justifyContent:"space-between"
+        justifyContent:"space-between",
+
     },
     logoLg:{
         display:"none", /* mặc định thẻ sẽ ẩn */
@@ -76,7 +77,7 @@ const [open,setOpen] = useState(false);
 const classes = useStyle({open});
 
     return (
-        <AppBar >
+        <AppBar position="fixed" >
             <Toolbar className={classes.toolbar}>
                 <Typography variant="h6" className={classes.logoLg}>
                     Mutosi Group
